@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<VersionPrefix>0.0.1</VersionPrefix>
+		<Description>Concise mathematical modeling library in C#, allowing to code models that are not different nor longer than those on the paper.</Description>
+		<PackageProjectUrl>https://ugur-arikan.github.io/MathModel/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Ugur-Arikan/MathModel</RepositoryUrl>
+		<Authors>ugur-arikan</Authors>
+		<PackageTags>mathematical programming;modeling;optimization;linear programming;mixed integer programming</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+		
+  <ItemGroup>
+    <PackageReference Include="OptRes" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
